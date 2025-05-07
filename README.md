@@ -44,6 +44,7 @@ CREATE DATABASE enotes_db;
 spring.datasource.url=jdbc:mysql://localhost:3306/enotes_db
 
 spring.datasource.username=your_mysql_username
+
 spring.datasource.password=your_mysql_password
 
 ## ScreenShot
