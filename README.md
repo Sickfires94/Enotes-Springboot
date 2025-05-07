@@ -37,12 +37,14 @@ Create a MySQL database named enotes_db:
 
 CREATE DATABASE enotes_db;
 
-Update the database configuration in the src/main/resources/application.properties file to match your local MySQL username and password:
+#### Update the database configuration in the src/main/resources/application.properties file to match your local MySQL username and password:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/enotes_db
 spring.datasource.username=your_mysql_username
 spring.datasource.password=your_mysql_password
 
 ## ScreenShot
+
+![image alt](https://github.com/Pankajword/Enotes-Springboot/blob/8bad5af1844755ea8222041faf7bbef2edcb9710/RegisterScreenshot.png)
 
 
