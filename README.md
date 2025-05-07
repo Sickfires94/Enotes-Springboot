@@ -31,7 +31,8 @@ Platform: Intellij IDE
 
 ## How to run this program
 
-git clone (https://github.com/Pankajword/Enotes-Springboot)
+git clone https://github.com/Pankajword/Enotes-Springboot
+
 
 ###### Set Up the Database
 
