@@ -14,6 +14,8 @@
 
   Responsive Interface: Designed a simple and intuitive interface for efficient note management, fully responsive across devices.
 
+  Pagination Support: Notes are displayed with pagination, allowing users to navigate through their notes easily without overwhelming the interface. This improves performance and user     experience, especially with large datasets.
+
   Persistent Storage: Integrated MySQL with Spring Data JPA for secure and reliable data storage.
 
 ## Technologies Used :
