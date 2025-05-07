@@ -19,7 +19,7 @@
   Persistent Storage: Integrated MySQL with Spring Data JPA for secure and reliable data storage.
 
 ## Technologies Used :
-Backend: Java (version 17) , Spring Boot, Spring Security, Spring Data JPA
+Backend: Java (version 17) , Spring Boot (version 3.4.5) , Spring Security, Spring Data JPA
 
 Frontend: Thymeleaf
 
