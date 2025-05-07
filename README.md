@@ -45,9 +45,17 @@ spring.datasource.password=your_mysql_password
 
 ## ScreenShot
 
+###### Register user
 ![image alt](https://github.com/Pankajword/Enotes-Springboot/blob/8bad5af1844755ea8222041faf7bbef2edcb9710/RegisterScreenshot.png)
 
+##### Insert Notes
 ![image alt](https://github.com/Pankajword/Enotes-Springboot/blob/0987953653ef2d240bee3ef2d400cbc9bf2f6553/ProjectScreenshot.png)
+
+##### View Notes
+
+![image alt](https://github.com/Pankajword/Enotes-Springboot/blob/0f3e150a0dbdbc16a0c8f24e4968e35f257ad05a/viewscreenshot.png)
+
+
 
 
 
