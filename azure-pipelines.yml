@@ -1,0 +1,32 @@
+trigger:
+  - main # Or the branch you want to trigger the build on (e.g., main, master, develop)
+
+pool:
+  vmImage: 'ubuntu-latest' # Or another suitable build agent image
+
+variables:
+  dockerRegistryServiceConnection: 'Notes App' # The name of your ACR service connection
+  imageRepository: 'notes-app' # The name you want to give your image in ACR (e.g., my-app)
+  dockerfilePath: 'Dockerfile' # Path to your Dockerfile in the repository
+  tag: '$(Build.BuildId)' # Use the build ID as the image tag
+
+stages:
+  - stage: BuildAndPush
+    displayName: 'Build and Push Docker Image'
+    jobs:
+      - job: BuildAndPushImage
+        displayName: 'Build and Push Image'
+        steps:
+        - task: Docker@2
+          displayName: 'Build and Push image to ACR'
+          inputs:
+            containerRegistry: '$(dockerRegistryServiceConnection)'
+            repository: '$(imageRepository)'
+            dockerfile: '$(dockerfilePath)'
+            command: 'buildAndPush'
+            buildArgs: |
+              DB_URL=$(DB_URL)
+              DB_USERNAME=${DB_USERNAME}
+              DB_PASSWORD=${DB_PASSWORD}
+            tags: |
+              $(tag)
